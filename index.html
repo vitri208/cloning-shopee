@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee</title>
+    <style>
+        * {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section.nav {
+    background-color: salmon;
+    width: 100%;
+    height: 45px;
+    line-height: 30px;
+}
+
+section.nav div.top-left {
+    float: left;
+    /* background-color: aqua; */
+    justify-content: space-evenly;
+    width: 30%;
+    display: flex;
+    margin: 5px;
+}
+
+section.nav div.top-left a {
+    text-decoration: none;
+    color: white;
+}
+
+section.nav div.top-right {
+    float: right;
+    /* background-color: red; */
+    justify-content: space-evenly;
+    width: 30%;
+    display: flex;
+    margin: 5px;
+}
+
+section.nav div.top-right a {
+    text-decoration: none;
+    color: white;
+}
+
+section.nav-bottom {
+    display: flex;
+    padding: 5px 20px;
+    background-color: salmon;
+    height: 70px;
+}
+
+section.nav-bottom img {
+    margin-bottom: 2px;
+}
+
+section.search {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 1px;
+    float: right;
+}
+
+section.search form {
+    /* background-color: white; */
+    /* width: 70%; */
+    min-width: 500px;
+    line-height: 50px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section.search form input.search-entry {
+    width: 85%;
+    height: 30px;
+    border: none;
+}
+
+section.search div.rec {
+    /* background-color: white; */
+    width: 800px;
+}
+
+section.search div.rec a {
+    text-decoration: none;
+    color: white;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    gap: 5px;
+    /* background-color: aqua; */
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+section.nav-bottom div.cart {
+    width: 150px;
+    line-height: 45px;
+}
+
+div.container {
+    display: grid;
+    width: 99%;
+    margin: 0px auto;
+    grid-template-columns: auto auto auto auto;
+    background-color: white;
+    padding: 5px;
+}
+
+div.item {
+    background-color: rgb(255, 162, 152);
+    height: 250px;
+    margin: 5px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.promo1 { grid-area: first;}
+.promo2 { grid-area: second;}
+.promo3 { grid-area: third;}
+
+div.hero {
+    display: grid;
+    grid-template-areas: 
+        'first second'
+        'first third';
+    gap: 10px;
+    background-color: red;
+    padding: 10px;
+    margin: 20px;
+    height: 250px;
+}
+
+.hero > div {
+    height: 30%;
+    background-color: yellowgreen;
+    /* text-align: center; */
+    /* padding: 20px 0; */
+}
+
+div.promo1 {
+    background-image: url(https://cf.shopee.co.id/file/id-50009109-0524d03f88938db30cdf1b2c58b90506_xxhdpi);
+    background-size: cover;
+}
+
+div.promo2 {
+    background-image: url(https://cf.shopee.co.id/file/id-50009109-dcd54f2c4fd8a2fa176def47d832df33_xhdpi);
+    background-size: cover;
+}
+
+div.promo3 {
+    background-image: url(https://down-id.img.susercontent.com/file/id-50009109-5a939d1bda62a5a81a4ecc635e97c9af);
+    background-size: cover;
+}
+
+.promo1 { grid-area: header;}
+.promo2 { grid-area: menu;}
+.promo3 { grid-area: main;}
+
+.containerpromo {
+    display: grid;
+    grid-template-areas: 
+    'header header header header menu menu'
+    'header header header header main main';
+    gap: 10px;
+    /* background-color: salmon; */
+    padding: 30px;
+}
+
+.containerpromo > div {
+    /* background-color: yellowgreen; */
+    text-align: center;
+    padding: 60px 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <section class="nav">
+            <div class="top-left">
+                <a href="#">Seller centre</a>
+                <a href="#">Download</a>
+                <a href="#">Ikuti kami di</a>
+                <a href="#">☎️</a>
+                <a href="#">❤️</a>
+                <a href="#">⭐</a>
+            </div>
+            <div class="top-right">
+                <a href="#">🔔notifikasi</a>
+                <a href="#">❔bantuan</a>
+                <a href="#">🌐bahasa</a>
+                <a href="#">🧍profil</a>
+            </div>
+        </section>
+        <section class="nav-bottom">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Shopee.svg/1200px-Shopee.svg.png" alt="logo" height="50px">
+            <section class="search">
+                <form action="https://www.google.com/search">
+                    <input class="search-entry" type="text" name="q" id="" placeholder="Semua beauty diskon 50% 24 jam">
+
+                    <input type="button" value="🔎">
+                </form>
+                <div class="rec">
+                    <a href="#">Dress pesta</a>
+                    <a href="#">Kemeja putih</a>
+                    <a href="#">Topi</a>
+                    <a href="#">Celana pendek</a>
+                    <a href="#">Celana panjang</a>
+                    <a href="#">Kemeja hitam</a>
+                    <a href="#">Make up</a>
+                    <a href="#">Sepatu</a>
+                </div>
+            </section>
+            <div class="cart">
+                <a href="#">🛒</a>
+            </div>
+        </section>
+    </header>
+
+    <section class="diskon">
+        <div class="containerpromo">
+            <div class="promo1"></div>
+            <div class="promo2"></div>
+            <div class="promo3"></div>
+        </div>
+        <div class="clear"></div>
+    </section>
+
+    <section class="main">
+        <div class="container">
+            <div class="item">
+                <img src="https://i.pinimg.com/564x/94/1f/38/941f380b4d44a81ea6ec5b2b34efb82b.jpg" alt="1" height="200px">
+                <p>Luke Pearce 1</p>
+            </div>
+            <div class="item">
+                <img src="https://i.pinimg.com/564x/42/1b/55/421b553e6e1cc9a96e44041444c69450.jpg" alt="2" height="200px">
+                <p>Luke Pearce 2</p>
+            </div>
+            <div class="item">
+                <img src="https://i.pinimg.com/564x/f3/68/b6/f368b6ca7a4c054fd8a81ef01a1f6723.jpg" alt="3" height="200px">
+                <p>Luke Pearce 3</p>
+            </div>
+            <div class="item">
+                <img src="https://i.pinimg.com/564x/bb/3f/c4/bb3fc4767b26725139ad71adb2c5686c.jpg" alt="4" height="200px">
+                <p>Luke Pearce 4</p>
+            </div>
+            <div class="item">
+                <img src="https://i.pinimg.com/564x/2b/2f/38/2b2f380547a879048017001ee2c26e4d.jpg" alt="5" height="200px">
+                <p>Luke Pearce 5</p>
+            </div>
+            <div class="item">
+                <img src="https://i.pinimg.com/564x/db/94/30/db9430c842878f40f518377eb7bcaa83.jpg" alt="6" height="200px">
+                <p>Luke Pearce 6</p>
+            </div>
+            <div class="item">
+                <img src="https://i.pinimg.com/564x/2d/05/ad/2d05ad71391502ffb2e51fa66aa1be75.jpg" alt="7" height="200px">
+                <p>Luke Pearce 7</p>
+            </div>
+            <div class="item">
+                <img src="https://i.pinimg.com/564x/51/9d/8f/519d8f217017fed13bad3d8c4c86b00f.jpg" alt="8" height="200px">
+                <p>Luke Pearce 8</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
